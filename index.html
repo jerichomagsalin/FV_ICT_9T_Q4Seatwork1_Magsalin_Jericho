@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Seatwork 1</title>
+
+	<style>
+		
+		/*Internal CSS properties in this section */
+
+		body{
+			background-color: blue;
+			background-image: url('');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		form{
+			font-family: ;
+			color: ;
+			font-size: 16px;
+		}
+
+		label{
+			font-family:;
+			font-weight: bolder;
+			font-style: italic;
+		}
+
+		input[type="submit"]{
+			color: white;
+			background-color: lightblue;
+			border-radius: 10px;
+			font-size: 18px;
+		}
+
+		input[type="submit"]:hover{
+			font-size: 25px;
+			cursor: pointer;
+			background-color: lightcyan ;
+			border-radius: 20px;
+		}
+
+
+
+		input[type="text"]{
+			width: 100%;
+			font-size: 20px;
+			color: green;
+			border-radius:  10px;
+		}
+		input[type="email"]{
+			width: 100%;
+			font-size: 20px;
+			color: green;
+			border-radius:  10px;
+		}
+
+		#form-box{
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 12px;
+			width: 500px;
+			margin: auto;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+		}
+
+		textarea{
+			width: 100%;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h2>Login Form</h2>
+
+<div id="form-box">
+	<form action ="">
+
+		<label for="uname">Username:</label>
+		<br>
+		<input type="text" id="uname" name="uname" placeholder="Type here...">
+		<br>
+		<label for="password">Password</label>:</label>
+		<br>
+		<input type="password" id="password" name="password" placeholder="Type here...">
+		<br>
+        <input type="checkbox" id="checkbox" name="check">
+        <label for="stay">stay Logged in</label>:</label>
+		
+		<br>
+        <p id="display"></p>
+        <br>
+		<input type="button" id="buatton" name="button" value="Login Form">
+        <input type="reset" id="clear" name="clear" value="cancel">
+	</form>
+	</div>
+
+
+	<!-- Note: this is just a draft / template -->
+
+
+    <script>
+        let x = document.getElementById("uname").value;
+        let y = document.getElementById("password").value;
+
+        if (x==="abcdefghijklmn" && y==="1234tyuh"){
+            document.getElementById("display").innerHTML = "login complete";
+
+        }
+
+        else {
+            document.getElementById("display").innerHTML = "login not complete";
+        }
+    </script>
+</body>
+</html>
